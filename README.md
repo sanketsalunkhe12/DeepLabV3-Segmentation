@@ -84,7 +84,7 @@ The cityscape dataset is in the following directory structure. The list files co
 
 ### Custom Dataset:
 
-For training Deeplab model on custom dataset, you need to organise all image in similar to above mentioned directory structure. In simple you can store images in following directory structure. After this you need to run <b> <i> unique_pixel.py </i></b> file which will generate unique pixel values for target images class ID. In DeepLab_Dataset_Creation class replace pixel_values[] array with these generated pixel values. 
+For training Deeplab model on custom dataset, you need to organise all image in similar to above mentioned directory structure. In simple you can store images in following directory structure. After this you need to run <b> <i> ./data_processing/unique_pixel.py </i></b> file which will generate unique pixel values for target images class ID. In DeepLab_Dataset_Creation class replace pixel_values[] array with these generated pixel values. 
 Also modify <b> num_classes </b> parameter of deeplab_model. 
 
     .custom dataset
