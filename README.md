@@ -104,4 +104,8 @@ Also modify <b> num_classes </b> parameter of deeplab_model.
     
 ### Training:
 
-<p align="justify"> For training process either you run <b> <i> train.py </i> </b> file with changes in path locations or can use <b> <i> deeplab_train_test.ipynb </i> </b> notebook which is a complete set of implementation. </p>
+<p align="justify"> For training process either you run <b> <i> train.py </i> </b> file with changes in path locations or can use <b> <i> deeplab_train_test.ipynb </i> </b> notebook which is a complete set of implementation. First you need to create training dataset and dataloader. After that import DeepLab model either with pre-trained weight or without weight. Once all requirements are satisfied initiate the training process. After each epoch model weights will be saved. Similar procedure will be followed for validation step. </p>
+
+### Testing & Implementation:
+
+<p align="justify">  For testing/implementation we need to process image similar to training dataset. The generated output need to convert into numpy array and findout the id of maximum value class. As we seen earlier the shape of output is [class_len, H, W], we need to find class id for each pixel.   </p>
