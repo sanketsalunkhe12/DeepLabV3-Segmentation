@@ -65,7 +65,7 @@
 
 ### Cityscape Dataset:
 
-The cityscape dataset is in the following directory structure. The list files contains path of each image. A dataprocessing class Deeplab_Dataset_Creation takes the list of input and target path and return x, y (input, target) tensors which will be feed to dataloader. 
+<p align="justify"> The cityscape dataset is in the following directory structure. The list files contains path of each image. A dataprocessing class Deeplab_Dataset_Creation takes the list of input and target path and return x, y (input, target) tensors which will be feed to dataloader. </p>
 
     .cityscape dataset
     ├── gtFine           # Target Images (y)        
@@ -84,7 +84,7 @@ The cityscape dataset is in the following directory structure. The list files co
 
 ### Custom Dataset:
 
-For training Deeplab model on custom dataset, you need to organise all image in similar to above mentioned directory structure. In simple you can store images in following directory structure. After this you need to run <b> <i> ./data_processing/unique_pixel.py </i></b> file which will generate unique pixel values for target images class ID. In DeepLab_Dataset_Creation class replace pixel_values[] array with these generated pixel values. 
+<p align="justify"> For training Deeplab model on custom dataset, you need to organise all image in similar to above mentioned directory structure. In simple you can store images in following directory structure. After this you need to run <b> <i> ./data_processing/unique_pixel.py </i></b> file which will generate unique pixel values for target images class ID. In DeepLab_Dataset_Creation class replace pixel_values[] array with these generated pixel values. </p>
 Also modify <b> num_classes </b> parameter of deeplab_model. 
 
     .custom dataset
@@ -102,3 +102,6 @@ Also modify <b> num_classes </b> parameter of deeplab_model.
     │   └── val.lst      # List of path of each validation input and target image 
     └── ...
     
+### Training:
+
+<p align="justify"> For training process either you run <b> <i> train.py </i> </b> file with changes in path locations or can use <b> <i> deeplab_train_test.ipynb </i> </b> notebook which is a complete set of implementation. </p>
